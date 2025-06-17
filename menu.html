@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xpress Korner Menu</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <style>
+   .card-custom {
+  max-width: 100%;
+  width: 100%;
+  height: 150px; /* Reduced height */
+  overflow: hidden;
+}
+
+.card-img-container {
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Ensures the image fills without distortion */
+}
+
+.card-body {
+  padding: 0.75rem; /* Slightly smaller padding for compactness */
+}
+
+
+     .shuttle-text-container {
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+    }
+
+    .shuttle-text {
+      display: inline-block;
+      position: relative;
+      animation: shuttle 3s ease-in-out infinite alternate;
+      font-weight: bold;
+    }
+
+    @keyframes shuttle {
+      from {
+        left: 0;
+      }
+      to {
+        left: 100%;
+        transform: translateX(-100%);
+      }
+    }
+    html {
+  scroll-behavior: smooth;
+}
+
+  </style>
+
+</head>
+<body style="background-image: url('bgcolor.png');  background-repeat: repeat; background-size: 250px;">
+     <nav class="navbar bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="home.html">
+      <img src="xpress korner.png" style="border-radius: 1000px;" alt="Logo" width="50" height="45" class="d-inline-block align-text-top">
+      &nbsp;&nbsp; Xpress Korner Menu
+    </a>
+   <div class="dropdown ms-auto">
+      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Categories
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="#fingerfoods">Finger Foods</a></li>
+        <li><a class="dropdown-item" href="#burgers">Burgers</a></li>
+        <li><a class="dropdown-item" href="#wraps">Wraps</a></li>
+        <li><a class="dropdown-item" href="#rolls">Rolls</a></li>
+        <li><a class="dropdown-item" href="#chinese">Chinese</a></li>
+        <li><a class="dropdown-item" href="#pizza">Pizza & Sandwich</a></li>
+        <li><a class="dropdown-item" href="#combos">Combos</a></li>
+        <li><a class="dropdown-item" href="#beverages">Cold Beverages</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br><br><br><br>
+<div class="p-3 mb-2 bg-warning-subtle text-warning-emphasis shuttle-text-container">
+  <div class="shuttle-text" id="fingerfoods">FINGER FOODS!</div>
+</div>
+
+<div class="container d-flex flex-column align-items-center py-4">
+    
+  <!-- Card 1 -->
+  <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="chicken popcorn.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Chicken Popcorn</h4>
+        <p class="card-text"><h5>₹70 /₹120</h5></p>
+        <p class="card-text"><small class="text-muted">(Half /Full)</small></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="chicken strips.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Chicken Strips</h4>
+        <p class="card-text"><h5>₹70</h5></p>
+        <p class="card-text"><small class="text-muted">(3pcs)</small></p>
+      </div>
+    </div>
+  </div>
+    <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="nofood.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Chicken Kathi /Boti Kebab (Tawa)</h4>
+        <p class="card-text"><h5>₹100</h5></p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="nofood.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Paneer (Tawa) Kebab Fry</h4>
+        <p class="card-text"><h5>₹100</h5></p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="chicken pakoda.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Chicken Pakora</h4>
+        <p class="card-text"><h5>₹160</h5></p>
+        <p class="card-text"><small class="text-muted">(5pcs)</small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="paneer pakora.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Paneer Pakora</h4>
+        <p class="card-text"><h5>₹60</h5></p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="french fries.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">French Fries</h4>
+        <p class="card-text"><h5>₹50</h5></p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="peri peri fries.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Peri Peri French Fries</h4>
+        <p class="card-text"><h5>₹70</h5></p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="veg chicken momo.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Steam Momo With Soup</h4>
+        <p class="card-text"><h5>₹50 /₹60</h5></p>
+        <p class="card-text"><small class="text-muted">(Veg /Chicken)</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="p-3 mb-2 bg-warning-subtle text-warning-emphasis shuttle-text-container">
+  <div class="shuttle-text" id="burgers">BURGERS!</div>
+</div>
+<div class="container d-flex flex-column align-items-center py-4">
+    
+  <!-- Card 1 -->
+  <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="chicken burger.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Chicken Burger</h4>
+        <p class="card-text"><h5>₹70</h5></p>
+        <p class="card-text"><small class="text-muted">Add on Cheese : ₹15</small></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="veg burger.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Veg Burger</h4>
+        <p class="card-text"><h5>₹50</h5></p>
+        <p class="card-text"><small class="text-muted">Add on Cheese : ₹15</small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="paneer burger.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Paneer Burger</h4>
+        <p class="card-text"><h5>₹60</h5></p>
+        <p class="card-text"><small class="text-muted">Add on Cheese : ₹15</small></p>
+      </div>
+    </div>
+  </div>
+   
+</div>
+<div class="p-3 mb-2 bg-warning-subtle text-warning-emphasis shuttle-text-container">
+  <div class="shuttle-text" id="wraps">WRAPS!</div>
+</div>
+<div class="container d-flex flex-column align-items-center py-4">
+    
+  <!-- Card 1 -->
+  <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="chicken wrap.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Chicken Wrap</h4>
+        <p class="card-text"><h5>₹99</h5></p>
+        <p class="card-text"><small class="text-muted">Add on Cheese : ₹15</small></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="veg peri peri wrap.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Peri Peri Veg Wrap</h4>
+        <p class="card-text"><h5>₹89</h5></p>
+        <p class="card-text"><small class="text-muted">Add on Cheese : ₹15</small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="paneer wrap.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Paneer Wrap</h4>
+        <p class="card-text"><h5>₹99</h5></p>
+        <p class="card-text"><small class="text-muted">Add on Cheese : ₹15</small></p>
+      </div>
+    </div>
+  </div>
+   
+</div>
+<div class="p-3 mb-2 bg-warning-subtle text-warning-emphasis shuttle-text-container">
+  <div class="shuttle-text" id="rolls">ROLLS!</div>
+</div>
+<div class="container d-flex flex-column align-items-center py-4">
+    
+  <!-- Card 1 -->
+  <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="egg roll.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Egg Roll</h4>
+        <p class="card-text"><h5>₹40</h5></p>
+        <p class="card-text"><small class="text-muted">Add ons : Egg ₹10, Chicken/Paneer ₹20, Lachcha Paratha ₹20</small></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="veg roll.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Veg Roll</h4>
+        <p class="card-text"><h5>₹40</h5></p>
+        <p class="card-text"><small class="text-muted">Add ons : Egg ₹10, Chicken/Paneer ₹20, Lachcha Paratha ₹20</small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="paneer roll.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Paneer Roll</h4>
+        <p class="card-text"><h5>₹50</h5></p>
+        <p class="card-text"><small class="text-muted">Add ons : Egg ₹10, Chicken/Paneer ₹20, Lachcha Paratha ₹20</small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="chicken kathi roll.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Chicken Kathi Roll</h4>
+        <p class="card-text"><h5>₹60</h5></p>
+        <p class="card-text"><small class="text-muted">Add ons : Egg ₹10, Chicken/Paneer ₹20, Lachcha Paratha ₹20</small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="nofood.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Egg Chicken Roll</h4>
+        <p class="card-text"><h5>₹70</h5></p>
+        <p class="card-text"><small class="text-muted">Add ons : Egg ₹10, Chicken/Paneer ₹20, Lachcha Paratha ₹20</small></p>
+      </div>
+    </div>
+  </div>
+   
+</div>
+<div class="p-3 mb-2 bg-warning-subtle text-warning-emphasis shuttle-text-container">
+  <div class="shuttle-text" id="chinese">CHINESE!</div>
+</div>
+<div class="container d-flex flex-column align-items-center py-4">
+    
+  <!-- Card 1 -->
+  <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="fried rice.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Fried Rice</h4>
+        <p class="card-text"><h5>₹99 /₹119 /₹129</h5></p>
+        <p class="card-text"><small class="text-muted">(Veg /Egg /Chicken)</small></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="hakka noodles.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Hakka Noodles</h4>
+        <p class="card-text"><h5>₹99 /₹119 /₹129</h5></p>
+        <p class="card-text"><small class="text-muted">(Veg /Egg /Chicken)</small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="chilli chicken.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Chilli Chicken</h4>
+        <p class="card-text"><h5>₹129</h5></p>
+        <p class="card-text"><small class="text-muted">(Dry /Gravy) 5pcs</small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="chilli paneer.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Chilli Paneer</h4>
+        <p class="card-text"><h5>₹129</h5></p>
+        <p class="card-text"><small class="text-muted">(Dry /Gravy) 5pcs</small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="veg manchurian.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Veg Manchurian</h4>
+        <p class="card-text"><h5>₹129</h5></p>
+        <p class="card-text"><small class="text-muted">(Dry /Gravy) 5pcs</small></p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<div class="p-3 mb-2 bg-warning-subtle text-warning-emphasis shuttle-text-container">
+  <div class="shuttle-text" id="pizza">PIZZA & SANDWICH!</div>
+</div>
+<div class="container d-flex flex-column align-items-center py-4">
+    
+  <!-- Card 1 -->
+  <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="veg pizza.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Veg Pizza</h4>
+        <p class="card-text"><h5>₹60</h5></p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="paneer pizza.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Paneer Pizza</h4>
+        <p class="card-text"><h5>₹70</h5></p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="chicken pizza.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Chicken Pizza</h4>
+        <p class="card-text"><h5>₹80</h5></p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="chicken tikka pizza.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Chicken Tikka Pizza</h4>
+        <p class="card-text"><h5>₹110</h5></p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="veg grilled sandwich.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Veg Grilled Sandwich</h4>
+        <p class="card-text"><h5>₹50</h5></p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="cheese corn sandwich.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Corn Cheese Sandwich</h4>
+        <p class="card-text"><h5>₹60</h5></p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="paneer sandwich.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Paneer Grilled Sandwich</h4>
+        <p class="card-text"><h5>₹70</h5></p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="chicken sandwich.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Chicken Grilled Sandwich</h4>
+        <p class="card-text"><h5>₹70</h5></p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<div class="p-3 mb-2 bg-warning-subtle text-warning-emphasis shuttle-text-container">
+  <div class="shuttle-text" id="combos">COMBOS!</div>
+</div>
+<div class="container d-flex flex-column align-items-center py-4">
+    
+  <!-- Card 1 -->
+  <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="nofood.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Veg Fried Rice & Chilli Chicken /Paneer</h4>
+        <p class="card-text"><h5>₹99</h5></p>
+        <p class="card-text"><small class="text-muted">(3pcs)</small></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="nofood.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Veg Hakka Noodles & Chilli Chicken /Paneer</h4>
+        <p class="card-text"><h5>₹99</h5></p>
+        <p class="card-text"><small class="text-muted">(3pcs)</small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="nofood.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">2pcs Lachcha Paratha & Chilli Chicken /Paneer /Manchurian</h4>
+        <p class="card-text"><h5>₹99</h5></p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="nofood.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Veg Burger /Pizza +Fries +Cold Drink</h4>
+        <p class="card-text"><h5>₹149</h5></p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="nofood.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Chicken Burger /Pizza +Fries +Cold Drink</h4>
+        <p class="card-text"><h5>₹169</h5></p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<div class="p-3 mb-2 bg-warning-subtle text-warning-emphasis shuttle-text-container">
+  <div class="shuttle-text" id="beverages">BEVERAGES!</div>
+</div>
+<div class="container d-flex flex-column align-items-center py-4">
+    
+  <!-- Card 1 -->
+  <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="mojito.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Blue Lagoon</h4>
+        <p class="card-text"><h5>₹69</h5></p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="mojito.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Virgin Mojito</h4>
+        <p class="card-text"><h5>₹69</h5></p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="mojito.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Watermelon Cooler</h4>
+        <p class="card-text"><h5>₹69</h5></p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="mojito.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Fresh Lime Soda</h4>
+        <p class="card-text"><h5>₹59</h5></p>
+        <p class="card-text"><small class="text-muted">(Sweet /Salted)</small></p>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="milkshake.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Chocolate Milkshake</h4>
+        <p class="card-text"><h5>₹99</h5></p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+   <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="milkshake.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Mango Milkshake</h4>
+        <p class="card-text"><h5>₹99</h5></p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+   <!-- Card 2 -->
+   <div class="card card-custom mb-3 shadow-sm d-flex flex-row" style="max-width: 720px;">
+    <div class="card-img-container col-4">
+      <img src="milkshake.png" class="img-fluid" alt="Card image">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+      <div class="card-body">
+        <h4 class="card-title">Strawberry Milkshake</h4>
+        <p class="card-text"><h5>₹99</h5></p>
+        <p class="card-text"><small class="text-muted"></small></p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<br>
+<br>
+<nav class="navbar bg-dark text-white fixed-bottom">
+    <div class="container-fluid justify-content-center text-center">
+      <span class="navbar-text small d-block d-md-none">
+        📞 <a href="tel:+917439691701" class="text-white text-decoration-none">+91-7439691701</a>
+      </span>
+      <span class="navbar-text fs-6 d-none d-md-block">
+        📞 Contact Us: <a href="tel:+917439691701" class="text-white text-decoration-none">+91-7439691701</a>
+      </span>
+    </div>
+  </nav>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+
+</html>
